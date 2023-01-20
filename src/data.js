@@ -81,7 +81,7 @@ const timelineData = [
     },
     {
         title: 'Got my certification in Scrum on SFPC™, CertiProf, Certification Code: 82171043',
-        date: 'Dec 2022',
+        date: 'Jan 2023',
         tag: '',
         color: '#018f69',
         url: 'https://certiprof.com/',
