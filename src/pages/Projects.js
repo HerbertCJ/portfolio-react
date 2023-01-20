@@ -1,5 +1,5 @@
 import CardBt from "../components/CardBt"
-import cardData from '../data'
+import {cardData} from '../data'
 
 
 function Projects() {

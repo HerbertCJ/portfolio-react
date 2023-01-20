@@ -17,18 +17,10 @@ function MyNavbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto actived" >
-              <Nav.Link>
-                <Link to='/' className='nav-link'>home</Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to='/projects' className='nav-link'>projects</Link>
-              </Nav.Link>
-              <Nav.Link>
+              <Link to='/' className='nav-link'>home</Link>
+              <Link to='/projects' className='nav-link'>projects</Link>
               <Link to='/aboutme' className='nav-link'>about me</Link>
-              </Nav.Link>
-              <Nav.Link>
               <Link to='/contact' className='nav-link'>contact</Link>
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

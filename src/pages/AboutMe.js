@@ -1,6 +1,9 @@
+import Timeline from "../components/Timeline"
 function AboutMe() {
   return (
-    <div>about me</div>
+    <div>
+      <Timeline/>
+    </div>
   )
 }
 export default AboutMe
