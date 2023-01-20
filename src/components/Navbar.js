@@ -8,7 +8,7 @@ function MyNavbar() {
     <div className='navbar-bg'>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home"><img src={logo} alt="logo" className='logo' /></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src={logo} alt="logo" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto actived" >

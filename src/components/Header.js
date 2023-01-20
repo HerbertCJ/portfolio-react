@@ -23,7 +23,7 @@ const Header = () => {
                 <div className="main-info">
                     <h1>web development</h1>
                     <h2 className='typed-text'>- <span ref={el}></span> -</h2>
-                    <button className='btn-main-offer'>contact me</button>
+                    <button className='btn-contact'>contact me</button>
                 </div>
             </div>
         </div>
