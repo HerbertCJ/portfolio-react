@@ -1,6 +1,8 @@
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      hello
+    </div>
   )
 }
 export default Contact

@@ -345,4 +345,7 @@ body {
 .aboutme {
     position: relative;
     z-index: 2;    
+    background-color: #2c2c2ca8;
+    padding: .625rem;
+       
 }
