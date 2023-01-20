@@ -6,12 +6,12 @@ function CardBt({title, text, url, image}) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
+      <Card.Body className='card-body'>
+        <Card.Title><h2>{title}</h2></Card.Title>
         <Card.Text>
-          {text}
+          <p className='card-text'>{text}</p>
         </Card.Text>
-        <Button variant="primary"><a href={url} target='_blank' rel='noreferrer' className='link-website'>Visit Website</a></Button>
+        <Button variant="primary" className='btn-card'><a href={url} target='_blank' rel='noreferrer' className='link-website'>Visit Website</a></Button>
       </Card.Body>
     </Card>
   );

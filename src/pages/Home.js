@@ -2,7 +2,7 @@ import Typed from 'typed.js'
 import { useEffect, useRef } from 'react'
 
 
-const Introduction = () => {
+const Home = () => {
     const el = useRef(null)
 
     useEffect(() => {
@@ -29,4 +29,4 @@ const Introduction = () => {
         </div>
     )
 }
-export default Introduction
+export default Home

@@ -21,7 +21,7 @@ body {
 
 /* Menu Links */
 
-nav a.nav-link {
+.nav-link {
     font-weight: 500;
     letter-spacing: 0.0475rem;
     font-size: 1.2rem;
@@ -35,15 +35,15 @@ nav a.nav-link {
     text-transform: uppercase;
 }
 
-.actived>li>a.active,
-.actived>a:focus {
+.nav-link>li>a.active,
+.nav-link>a:focus {
     border-top: 0.1875rem solid var(--primary-orange);
 }
 
 @media screen and (max-width: 992px) {
 
-    .actived>li>a.active,
-    .actived>a:focus {
+    .nav-link>li>a.active,
+    .nav-link>a:focus {
         border-top: 0;
     }
 
@@ -125,25 +125,38 @@ nav a.nav-link {
 /* PROJECTS */
 .projects {
     position: relative;
-    height: 97vh;
+    height: 77.7vh;
     z-index: 2;
     background: brown;
     background-size: contain;
-    background-position: center;   
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.projects h1 {
+@media screen and (max-width: 1250px) {
+    .projects {
+        height: 100%;
+    }
+}
+.project-container h1 {
+    position: relative;
+    z-index: 2;
+    background-color: brown; 
     text-transform: capitalize;
     text-align: center;
-    padding-top: 1rem;   
+    padding: 2rem;
+    margin-bottom: 0;  
     font-size: 3rem;
     letter-spacing: .4rem;
     color: var(--primary-clr);
 }
 
 .card {
-    margin: 2rem;
+    margin: 4rem;
     padding: 1rem;
+    height: 440px;
 }
 
 .link-website {
@@ -153,4 +166,17 @@ nav a.nav-link {
 
 .link-website:hover {
     color: var(--primary-clr);    
+}
+
+.card-text {
+    font-size: 1.2rem;
+    text-align: justify;    
+}
+
+.btn-card {
+    font-size: 1.2rem;
+}
+
+.card-body {
+    text-align: center;
 }

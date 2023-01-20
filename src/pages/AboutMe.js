@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <div>AboutMe</div>
+    <div>about me</div>
   )
 }
 export default AboutMe
