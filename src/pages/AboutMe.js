@@ -1,7 +1,7 @@
 import Timeline from "../components/Timeline"
 function AboutMe() {
   return (
-    <div>
+    <div className="aboutme">
       <Timeline/>
     </div>
   )

@@ -341,3 +341,8 @@ body {
         display: none;
     }
 }
+
+.aboutme {
+    position: relative;
+    z-index: 2;    
+}
