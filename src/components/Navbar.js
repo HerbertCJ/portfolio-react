@@ -13,7 +13,7 @@ function MyNavbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto actived" >
               <Nav.Link href="#home">home</Nav.Link>
-              <Nav.Link href="#proejcts">proejcts</Nav.Link>
+              <Nav.Link href="#projects">projects</Nav.Link>
               <Nav.Link href="#aboutme">about me</Nav.Link>
               <Nav.Link href="#contact">contact</Nav.Link>
             </Nav>

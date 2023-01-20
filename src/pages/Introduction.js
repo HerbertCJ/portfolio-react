@@ -2,7 +2,7 @@ import Typed from 'typed.js'
 import { useEffect, useRef } from 'react'
 
 
-const Header = () => {
+const Introduction = () => {
     const el = useRef(null)
 
     useEffect(() => {
@@ -18,8 +18,8 @@ const Header = () => {
     })
 
     return (
-        <div className="header-wrapper">
-            <div className="header-bg">
+        <div className="intro-wrapper">
+            <div className="intro-bg">
                 <div className="main-info">
                     <h1>web development</h1>
                     <h2 className='typed-text'>- <span ref={el}></span> -</h2>
@@ -29,4 +29,4 @@ const Header = () => {
         </div>
     )
 }
-export default Header
+export default Introduction

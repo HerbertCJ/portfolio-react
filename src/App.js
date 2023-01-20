@@ -1,6 +1,9 @@
 import Navbar from './components/Navbar'
-import Header from './components/Header'
+import Introduction from './pages/Introduction'
 import ParticleBG from './components/ParticleBG'
+import Projects from './pages/Projects'
+import AboutMe from './pages/AboutMe'
+import Contact from './pages/Contact'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -10,7 +13,10 @@ function App() {
     <div>
       <ParticleBG />
       <Navbar />      
-      <Header />      
+      <Introduction /> 
+      <Projects />     
+      <AboutMe />
+      <Contact />
     </div>
   );
 }

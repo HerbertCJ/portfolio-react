@@ -57,9 +57,9 @@ nav a.nav-link {
 
 }
 
-/*  HEADER */
+/*  intro */
 
-.header-wrapper {
+.intro-wrapper {
     position: relative;
     background: url(./images/background.jpg);
     background-size: cover;
@@ -67,7 +67,7 @@ nav a.nav-link {
     height: 90vh;
 }
 
-.header-bg {
+.intro-bg {
     position: relative;
     background: rgba(0, 0, 0, 0.6);
     background-size: cover;
@@ -120,4 +120,37 @@ nav a.nav-link {
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+/* PROJECTS */
+.projects {
+    position: relative;
+    height: 97vh;
+    z-index: 2;
+    background: brown;
+    background-size: contain;
+    background-position: center;   
+}
+
+.projects h1 {
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 1rem;   
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    color: var(--primary-clr);
+}
+
+.card {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.link-website {
+    color: var(--primary-clr);
+    text-decoration: none;
+}
+
+.link-website:hover {
+    color: var(--primary-clr);    
 }
