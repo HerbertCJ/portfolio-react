@@ -24,6 +24,14 @@ const cardData = [
 
 const timelineData = [
     {
+        title: 'Started my bachelor\'s degree on UNICAP University',
+        date: 'Feb 2013',
+        tag: '',
+        color: '#018f69',
+        url: 'https://portal.unicap.br/',
+        text: 'University Page',
+    },
+    {
         title: 'Got my first IT job as an Intern on Reciprev Saúde Brazil',
         date: 'Jan 2017',
         tag: '',
@@ -32,21 +40,21 @@ const timelineData = [
         text: 'Company Page',
     },
     {
-        title: 'Got my bachalors degree in Computer Science',
-        date: 'Jun 2018',
-        tag: '',
-        color: '#018f69',
-        url: 'https://portal.unicap.br/',
-        text: 'University Page',
-    },
-    {
         title: 'Got my second job as Finalcial Manager',
         date: 'Aug 2017',
         tag: '',
-        color: '#d4d432',
+        color: '#018f69',
         url: '',
         text: '',
     },
+    {
+        title: 'Got my bachelor\'s degree in Computer Science',
+        date: 'Jun 2018',
+        tag: '',
+        color: '#d4d432',
+        url: 'https://portal.unicap.br/',
+        text: 'University Page',
+    },  
     {
         title: 'Started to study Java and Spring and got my certification',
         date: 'Sep 2022',
