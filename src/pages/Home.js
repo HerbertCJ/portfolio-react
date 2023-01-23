@@ -22,8 +22,7 @@ const Home = () => {
             <div className="intro-bg">
                 <div className="main-info">
                     <h1>web development</h1>
-                    <h2 className='typed-text'>- <span ref={el}></span> -</h2>
-                    <button className='btn-contact'>contact me</button>
+                    <h2 className='typed-text'>- <span ref={el}></span> -</h2>                    
                 </div>
             </div>
         </div>

@@ -28,8 +28,10 @@ body {
     cursor: pointer;
     color: var(--primary-clr);
     margin-left: 2rem;
-    padding: 0.625rem;
+    padding: 0.625rem;      
+    
 }
+
 
 #responsive-navbar-nav {
     text-transform: uppercase;
@@ -372,6 +374,16 @@ body {
 .social-link{
     text-decoration: none;
     color: black;
+}
+
+.social-link:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.social-link:hover{
+    cursor: pointer;
+    color: var(--primary-hover-red);
 }
 
 .contact-content h1 {
