@@ -349,3 +349,42 @@ body {
     padding: .625rem;
        
 }
+
+.contact {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.671);
+    height: 90vh;
+    z-index: 2;    
+    padding: 2rem;
+}
+
+.contact-content {
+    position: absolute;
+    z-index: 2;       
+    right: 50%;
+    top: 20%;    
+}
+
+.perfilphoto {
+    float: right;    
+}
+
+.social-link{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 580px) {
+    .perfilphoto {
+        float: bottom;   
+    }
+}

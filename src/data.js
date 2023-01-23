@@ -1,3 +1,6 @@
+import {BsLinkedin, BsGithub} from 'react-icons/bs'
+
+
 const cardData = [
     {
         id: 1,
@@ -54,7 +57,7 @@ const timelineData = [
         color: '#d4d432',
         url: 'https://portal.unicap.br/',
         text: 'University Page',
-    },  
+    },
     {
         title: 'Started to study Java and Spring and got my certification',
         date: 'Sep 2022',
@@ -105,5 +108,20 @@ const timelineData = [
     },
 ];
 
+const socials = [
+    {
+        id: 1,
+        url: 'https://www.linkedin.com/in/herbertcj',
+        text: 'Linkedin',
+        icon: <BsLinkedin />,
+    },
+    {
+        id: 2,
+        url: 'https://github.com/HerbertCJ',
+        text: 'Github',
+        icon: <BsGithub />,
+    },
+]
 
-export { cardData, timelineData }
+
+export { cardData, timelineData, socials }
