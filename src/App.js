@@ -12,15 +12,15 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <Router>      
       <Navbar /> 
-      <ParticleBG />
+      <ParticleBG />      
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='projects' element={<Projects />}/>
         <Route path='aboutme' element={<AboutMe />}/>
-        <Route path='contact' element={<Contact />}/>      
-      </Routes>
+        <Route path='contact' element={<Contact />}/> 
+      </Routes>          
     </Router>
   );
 }

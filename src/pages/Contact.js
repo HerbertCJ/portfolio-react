@@ -1,11 +1,9 @@
-import perfilBg from '../images/perfil_nobg.png'
 import {MdEmail} from 'react-icons/md'
 import {socials} from '../data'
 
 function Contact() {
   return (
-    <div className="contact">
-      <img src={perfilBg} alt="perfil" className='perfilphoto' />
+    <div className="contact">      
       <section className="contact-content">        
         <h1>Let's work together</h1>
         {socials.map((link) => {
