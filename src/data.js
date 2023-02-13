@@ -28,7 +28,7 @@ const cardData = [
         title: 'ProjecTec',
         text: 'Create your projects and save all data you need for planning.',
         url: 'https://projectec.netlify.app',
-        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cardgame.jpg',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/projectec.jpg',
     },
 ]
 
