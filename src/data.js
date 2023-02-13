@@ -23,6 +23,13 @@ const cardData = [
         url: 'https://herbertcj.github.io/CardGame',
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cardgame.jpg',
     },
+    {
+        id: 4,
+        title: 'ProjecTec',
+        text: 'Create your projects and save all data you need for planning.',
+        url: 'https://projectec.netlify.app',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cardgame.jpg',
+    },
 ]
 
 const timelineData = [
