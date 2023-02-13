@@ -126,8 +126,8 @@ body {
 
 /* PROJECTS */
 .projects {
-    position: relative;
-    height: 77.7vh;
+    position: relative;   
+    min-height: 90vh; 
     z-index: 2;
     background: brown;
     background-size: contain;
@@ -178,6 +178,10 @@ body {
 
 .btn-card {
     font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    margin-bottom: 10px;    
 }
 
 .card-body {
@@ -348,7 +352,7 @@ body {
     position: relative;
     z-index: 2;    
     background-color: #2c2c2ca8;
-    padding: .625rem;
+    padding: .625rem;   
        
 }
 
