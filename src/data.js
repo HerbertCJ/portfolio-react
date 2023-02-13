@@ -30,6 +30,13 @@ const cardData = [
         url: 'https://projectec.netlify.app',
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/projectec.jpg',
     },
+    {
+        id: 4,
+        title: 'CockTails API',
+        text: 'Using a public API for fetch some cocktails.',
+        url: 'https://cocktails0.netlify.app/',
+        image: '',
+    },    
 ]
 
 const timelineData = [
