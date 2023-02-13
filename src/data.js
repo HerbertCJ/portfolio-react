@@ -35,7 +35,7 @@ const cardData = [
         title: 'CockTails API',
         text: 'Using a public API for fetch some cocktails.',
         url: 'https://cocktails0.netlify.app/',
-        image: '',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cocktails.jpg',
     },    
 ]
 
