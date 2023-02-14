@@ -31,12 +31,20 @@ const cardData = [
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/projectec.jpg',
     },
     {
-        id: 4,
+        id: 5,
         title: 'CockTails API',
         text: 'Using a public API for fetch some cocktails.',
         url: 'https://cocktails0.netlify.app/',
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cocktails.jpg',
-    },    
+    }, 
+    {
+        id: 6,
+        title: 'JobFinder',
+        text: 'Find/create jobs.',
+        url: 'https://jobfinder0.netlify.app/',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cocktails.jpg',
+    }, 
+       
 ]
 
 const timelineData = [
