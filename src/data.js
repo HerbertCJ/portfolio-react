@@ -1,4 +1,4 @@
-import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 
 const cardData = [
@@ -36,15 +36,15 @@ const cardData = [
         text: 'Using a public API for fetch some cocktails.',
         url: 'https://cocktails0.netlify.app/',
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cocktails.jpg',
-    }, 
+    },
     {
         id: 6,
         title: 'JobFinder',
         text: 'Find/create jobs.',
         url: 'https://jobfinder0.netlify.app/',
-        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/cocktails.jpg',
-    }, 
-       
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/jobfinder.jpg',
+    },
+
 ]
 
 const timelineData = [
