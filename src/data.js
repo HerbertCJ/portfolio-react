@@ -49,7 +49,7 @@ const cardData = [
         title: 'MyFood',
         text: 'Create your Menu with infos of the tabela TACO.',
         url: 'https://myfood0.netlify.app/',
-        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/jobfinder.jpg',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/myfood.jpg',
     },
 
 ]
