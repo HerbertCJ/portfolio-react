@@ -44,6 +44,13 @@ const cardData = [
         url: 'https://jobfinder0.netlify.app/',
         image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/jobfinder.jpg',
     },
+    {
+        id: 7,
+        title: 'MyFood',
+        text: 'Create your Menu with infos of the tabela TACO.',
+        url: 'https://myfood0.netlify.app/',
+        image: 'https://raw.githubusercontent.com/HerbertCJ/portfolio-react/main/src/images/jobfinder.jpg',
+    },
 
 ]
 
