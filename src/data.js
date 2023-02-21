@@ -1,5 +1,5 @@
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
-
+import linkedin from './images/icons/linkedin.png'
+import github from './images/icons/github.png'
 
 const cardData = [
     {
@@ -142,13 +142,13 @@ const socials = [
         id: 1,
         url: 'https://www.linkedin.com/in/herbertcj',
         text: 'Linkedin',
-        icon: <BsLinkedin />,
+        icon: linkedin,
     },
     {
         id: 2,
         url: 'https://github.com/HerbertCJ',
         text: 'Github',
-        icon: <BsGithub />,
+        icon: github,
     },
 ]
 

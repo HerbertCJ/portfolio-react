@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 
 function CardBt({title, text, url, image}) {  
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', height: '30rem' }}>
       <Card.Img variant="top" src={image} />
       <Card.Body className='card-body'>
-        <Card.Title><h2>{title}</h2></Card.Title>
+        <Card.Title><h3>{title}</h3></Card.Title>
         <Card.Text>
           <span className='card-text'>{text}</span>
         </Card.Text>
