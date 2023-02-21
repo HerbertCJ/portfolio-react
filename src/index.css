@@ -528,3 +528,21 @@
   opacity: 1;
   transition: 0.4s ease-in;
 }
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  background-color: rgba(33, 37, 41, 0.900);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 4px 
+}

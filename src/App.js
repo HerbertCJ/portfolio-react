@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import ParticleBG from './components/ParticleBG'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from './pages/Home';
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <ParticleBG />
+      <Footer />
     </>
   );
 }
