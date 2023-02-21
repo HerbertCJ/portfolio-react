@@ -132,6 +132,14 @@ const timelineData = [
         url: 'https://www.freecodecamp.org/certification/HerbertCJ/front-end-development-libraries',
         text: 'Check Certification',
     },
+    {
+        title: 'Working as a freelancer at the moment',
+        date: 'Feb 2023',
+        tag: '',
+        color: '#018f69',
+        url: '',
+        text: '',
+    },
 ];
 
 export { cardData, timelineData }

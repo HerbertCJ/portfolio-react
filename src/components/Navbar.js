@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../images/logo.png'
+import logo from '../images/logo2.png'
 
 function MyNavbar() {
   return (
@@ -10,7 +10,7 @@ function MyNavbar() {
         <Container>
           <Navbar.Brand>    
           <Nav.Link href='#home' className='nav-link' eventKey="1">
-            <img src={logo} alt="logo" /> 
+            <img src={logo} alt="logo" className='logo-img' /> 
           </Nav.Link>                          
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
