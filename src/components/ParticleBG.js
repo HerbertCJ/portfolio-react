@@ -56,7 +56,7 @@ const ParticleBG = () => {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -73,7 +73,7 @@ const ParticleBG = () => {
                             enable: true,
                             area: 900,
                         },
-                        value: 80,
+                        value: 90,
                     },
                     opacity: {
                         value: 0.5,
