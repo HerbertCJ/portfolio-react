@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 :root {
@@ -21,37 +22,49 @@
   margin: 50px 0px;
   font-size: 2.5rem;
   color: white;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
 }
 
-
-button {
-  background-color: var(--primary-green) !important;
-}
-
-button:hover {
-  background-color: #2d553e !important;  
-}
 
 /* NAVBAR */
 
 
 .navbar-bg {
   position: relative;
-  z-index: 99;  
+  z-index: 99;
+  font-size: 20px;
 }
 
 /* Menu Links */
 
 .nav-link {
-  font-weight: 500;
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
   letter-spacing: 0.0475rem;
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--primary-clr);
   margin-left: 2rem;
   padding: 0.625rem;
-
 }
+
+.navbar-toggler {
+  background-color: white !important;  
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-orange) !important;
+}
+
+.active {
+  color: var(--primary-orange) !important;
+}
+
 
 
 #responsive-navbar-nav {
@@ -60,7 +73,7 @@ button:hover {
 
 .nav-link.active,
 .nav-link:focus {
-  border-top: 0.1875rem solid white;
+  border-top: 0.1875rem solid var(--primary-orange);
 }
 
 @media screen and (max-width: 992px) {
@@ -170,7 +183,9 @@ button:hover {
   padding: 2rem;
   margin-bottom: 0;
   font-size: 3rem;
-  letter-spacing: .4rem;  
+  letter-spacing: .4rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
 }
 
 
@@ -356,10 +371,14 @@ button:hover {
 .contact {  
   background-color: var(--primary-blue);
   position: relative;  
-  height: 80vh;
+  height: 50vh;
   z-index: 2;
   padding: 5rem; 
-  color: white;  
+  color: white;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  
 }
 
 
@@ -368,6 +387,8 @@ button:hover {
   margin-bottom: 2rem;
   color: white;
   text-align: center;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
 }
 
 
@@ -400,24 +421,13 @@ button:hover {
   font-size: 20px;  
 }
 
-@media screen and (min-width: 1200px) {
-  .contact-content a{
-    display: block;
-  }
-  .contact-content {  
-    width: fit-content;
-    display: block;
-    margin: auto;    
-  }
-}
-
 /* CARD */
 
 
 #cardLayout {
   position: relative;
   width: 320px;
-  height: 450px;
+  height: 470px;
   color: #fff;
   background: #111;
   display: flex;    
@@ -506,7 +516,7 @@ button:hover {
   font-weight: 700;    
   justify-content: center;
   border-radius: 7px;
-  margin-top: 5px;    
+  margin-top: 5px;  
 } 
 
 
@@ -520,8 +530,7 @@ button:hover {
 } 
 
 
-#cardLayout .content:hover
-{    
+#cardLayout .content:hover{    
 opacity: 1;
 transition: 0.4s ease-in; 
 }

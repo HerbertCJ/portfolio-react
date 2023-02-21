@@ -6,7 +6,7 @@ import logo from '../images/logo.png'
 function MyNavbar() {
   return (
     <div className='navbar-bg'>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top' >
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" fixed='top' >
         <Container>
           <Navbar.Brand>    
           <Nav.Link href='#home' className='nav-link' eventKey="1">

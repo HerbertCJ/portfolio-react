@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 
-function ProjectCard({ title, text, url, image }) {
+function Card({ title, text, url, image }) {
   return (
     <motion.div initial="hidden"
       whileInView="visible"
@@ -27,4 +27,4 @@ function ProjectCard({ title, text, url, image }) {
   )
 }
 
-export default ProjectCard
+export default Card

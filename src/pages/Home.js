@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import CardBt from "../components/CardBt"
+import Card from "../components/Card"
 import { cardData } from '../data'
 import Timeline from "../components/Timeline"
 import { MdEmail } from 'react-icons/md'
@@ -61,7 +61,7 @@ const Home = () => {
                 <h2>Checkout my projects</h2>
                 <section className="projects">
                     {cardData.map((card) => {
-                        return <CardBt key={card.id} {...card} className='card' />
+                        return <Card key={card.id} {...card} className='card' />
                     })}
                 </section>
             </div>
