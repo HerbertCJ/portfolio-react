@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 :root {
   --primary-clr: #fff;
   --primary-orange: #f9ab00;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-blue: #03045E;
+  --primary-green: #417B5A;
 }
 
 .title {
@@ -14,15 +23,20 @@
   color: white;
 }
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;
+
+button {
+  background-color: var(--primary-green) !important;
+}
+
+button:hover {
+  background-color: #2d553e !important;  
 }
 
 /* NAVBAR */
 
 .navbar-bg {
   position: relative;
-  z-index: 2;
+  z-index: 99;
 }
 
 
@@ -74,6 +88,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 90vh;
+  margin-top: 110px;
 }
 
 .intro-bg {
@@ -136,7 +151,7 @@ body {
   position: relative;
   min-height: 90vh;
   z-index: 2;
-  background: brown;
+  background: var(--primary-blue);
   background-size: contain;
   background-position: center;
   display: flex;
@@ -153,7 +168,7 @@ body {
 .project-container h2 {
   position: relative;
   z-index: 2;
-  background-color: brown;
+  background-color: var(--primary-blue);
   text-transform: capitalize;
   text-align: center;
   padding: 2rem;
@@ -205,7 +220,7 @@ body {
 }
 
 .timeline-container::after {
-  background-color: #e17b77;
+  background-color: #27CEE7;
   content: '';
   position: absolute;
   left: calc(50% - 2px);
@@ -308,7 +323,7 @@ body {
 
 .timeline-item-content .circle {
   background-color: #fff;
-  border: 3px solid #e17b77;
+  border: 3px solid #27CEE7;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 10px);
@@ -359,34 +374,20 @@ body {
 .aboutme {
   position: relative;
   z-index: 2;
-  background-color: #2c2c2ca8;
+  background-color: var(--primary-green);
   padding: .625rem;
 
 }
 
 .contact {
   position: relative;
-  background-color: brown;
+  background-color: var(--primary-blue);
   height: 100vh;
   z-index: 2;
   padding: 5rem; 
-  color: white;
+  color: white;  
 }
 
-.social-link {
-  text-decoration: none;
-  color: white;
-}
-
-.social-link:visited {
-  text-decoration: none;
-  color: white;
-}
-
-.social-link:hover {
-  cursor: pointer;
-  color: black;
-}
 
 .contact h2 {
   font-size: 2.5rem;
@@ -395,21 +396,43 @@ body {
   text-align: center;
 }
 
-.socials {
-  font-size: 1.5rem;
+
+.contact-content {  
+  width: fit-content;
+  display: flex;
+  flex-direction: column;   
 }
 
-.contact-content {
-  width: 60vw;
-  margin: auto;
+.contact-content a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
-.contact-content img {
-  width: 40px;
-  
+.contact-content > a:hover {
+  color: greenyellow;
 }
 
-.emailicon {
+.iconlinkedin, .icongithub, .iconemail {
   font-size: 35px;
-  color: rgb(133, 133, 133);
+  color: white;
+  margin: 7px 0px;
+}
+
+.emailp {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;  
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-content a{
+    display: block;
+  }
+  .contact-content {  
+    width: fit-content;
+    display: block;
+    margin: auto;    
+  }
 }

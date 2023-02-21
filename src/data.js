@@ -1,6 +1,3 @@
-import linkedin from './images/icons/linkedin.png'
-import github from './images/icons/github.png'
-
 const cardData = [
     {
         id: 1,
@@ -137,20 +134,4 @@ const timelineData = [
     },
 ];
 
-const socials = [
-    {
-        id: 1,
-        url: 'https://www.linkedin.com/in/herbertcj',
-        text: 'Linkedin',
-        icon: linkedin,
-    },
-    {
-        id: 2,
-        url: 'https://github.com/HerbertCJ',
-        text: 'Github',
-        icon: github,
-    },
-]
-
-
-export { cardData, timelineData, socials }
+export { cardData, timelineData }
