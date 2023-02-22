@@ -179,7 +179,7 @@
 .project-container {
   position: relative;
   z-index: 2;
-  background: url('./images/background-code.png');
+  background: url('./images/background-code.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -371,7 +371,7 @@
   position: relative;
   z-index: 2;
   /* background-image: linear-gradient(45deg, #605F5D, #002A32 ); */
-  background: url('./images/background-code2.png') no-repeat;  
+  background: url('./images/background-code2.jpg') no-repeat;  
   background-size: cover;   
   padding: 50px 0px;
 }
