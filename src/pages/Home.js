@@ -3,14 +3,14 @@ import Card from "../components/Card"
 import { cardData } from '../data'
 import Timeline from "../components/Timeline"
 import { MdEmail } from 'react-icons/md'
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
-const Home = () => {  
+const Home = () => {
     const [loopNum, setLoopNum] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)    
+    const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
-    const toRotate = ["HTML5", "CCS", "JavaScript", "BootStrap", "React.js"]
+    const toRotate = ["HTML5", "CCS", "JavaScript", "TypeScript", "BootStrap", "React.js", "Redux", "Node.js", "MongoDB", "MySQL", "Java"]
     const period = 1000
 
     useEffect(() => {
@@ -19,19 +19,19 @@ const Home = () => {
         }, delta)
 
         return () => { clearInterval(ticker) }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [delta, text])
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const tick = () => {
         let i = loopNum % toRotate.length
         let fullText = toRotate[i]
-        let updatedText = isDeleting ? fullText.substring(0, text.length -1) : fullText.substring(0, text.length + 1)
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
 
         setText(updatedText)
 
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
+            setDelta(prevDelta => prevDelta / 2)
         }
 
         if (!isDeleting && updatedText === fullText) {
@@ -39,7 +39,7 @@ const Home = () => {
             setDelta(period)
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false)
-            setLoopNum(loopNum +1)
+            setLoopNum(loopNum + 1)
             setDelta(100)
         }
     }
@@ -58,12 +58,14 @@ const Home = () => {
 
             {/* PROJECTS */}
             <div className="project-container" id='projects'>
-                <h2>Checkout my projects</h2>
-                <section className="projects">
-                    {cardData.map((card) => {
-                        return <Card key={card.id} {...card} className='card' />
-                    })}
-                </section>
+                <div className="dark-bg">
+                    <h2>Checkout my projects</h2>
+                    <section className="projects">
+                        {cardData.map((card) => {
+                            return <Card key={card.id} {...card} className='card' />
+                        })}
+                    </section>
+                </div>
             </div>
 
             {/* ABOUT ME */}
