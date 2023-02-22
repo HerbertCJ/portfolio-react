@@ -9,7 +9,7 @@ function MyNavbar() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" fixed='top'>
         <Container>
           <Navbar.Brand>    
-          <Nav.Link href='#home' className='nav-link' eventKey="1">
+          <Nav.Link href='#home' className='nav-link' eventKey="0">
             <img src={logo} alt="logo" /> 
           </Nav.Link>                          
           </Navbar.Brand>
