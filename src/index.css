@@ -15,8 +15,8 @@
   --primary-hover-red: #f33501;
   --primary-blue: #264853;
   --primary-green: #417B5A;
-  --card1: #3BC14A;
-  --card2: #2978A0;
+  --card2: #BA5AED;
+  --card1: #23D1D9;
 }
 
 .title {
@@ -103,7 +103,7 @@
   background-size: cover;
   background-position: center;
   height: 90vh;
-  margin-top: 100px;
+  margin-top: 100px;  
 }
 
 .intro-bg {
@@ -176,6 +176,15 @@
   padding-bottom: 40px;
 }
 
+.project-container {
+  position: relative;
+  z-index: 2;
+  background: url('./images/background-code.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 90px;
+}
 
 .project-container h2 {
   position: relative;
@@ -188,6 +197,7 @@
   letter-spacing: .4rem;
   font-family: 'Jura', sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 
@@ -197,7 +207,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 40px 0;
+  margin: 40px 0;  
 }
 
 .timeline-container::after {
@@ -216,6 +226,7 @@
   position: relative;
   margin: 10px 0;
   width: 50%;
+  
 }
 
 .timeline-item:nth-child(odd) {
@@ -226,7 +237,7 @@
 }
 
 .timeline-item-content {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   background-color: #fff;
   display: flex;
@@ -236,7 +247,7 @@
   position: relative;
   width: 400px;
   max-width: 70%;
-  text-align: right;
+  text-align: right;  
 }
 
 .timeline-item-content::after {
@@ -286,10 +297,10 @@
 }
 
 .timeline-item-content p {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 24px;
   margin: 15px 0;
-  max-width: 250px;
+  
 }
 
 .timeline-item-content a {
@@ -350,37 +361,60 @@
   .timeline-item-content a::after {
     display: none;
   }
+
+  .timeline-item-content p {
+    font-size: 18px;
+  }
 }
 
 .aboutme {
   position: relative;
   z-index: 2;
-  background-color: #012429;
-  padding: .625rem;
-
+  /* background-image: linear-gradient(45deg, #605F5D, #002A32 ); */
+  background: url('./images/background-code2.png') no-repeat;  
+  background-size: cover;   
+  padding: 50px 0px;
 }
 
-.contact {
-  background-color: whitesmoke;
+.aboutme h2 {
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.contact {  
+  background-size: cover;
+  background-position: center;
   position: relative;
   height: 50vh;
   z-index: 2;
-  padding: 5rem;
-  color: white;
+  padding-top: 50px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: rgba(33, 37, 41, 0.900);  
 }
 
 
 .contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: black;
-  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+  text-align: center;  
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  margin-bottom: 50px;
   font-family: 'Jura', sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 
@@ -392,7 +426,7 @@
 
 .contact-content a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 22px;
   letter-spacing: 1px;
 }
@@ -404,14 +438,14 @@
 .iconlinkedin,
 .icongithub,
 .iconemail {
-  font-size: 35px;
-  color: black;
+  font-size: 35px;  
   margin: 7px 0px;
 }
 
+
 .emailp {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -534,15 +568,18 @@
 .footer {
   position: relative;
   z-index: 2;
-  padding: 40px;
+  padding: 30px;
   background-color: rgba(33, 37, 41, 0.900);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 5px solid grey;
 }
 
 .footer p {
-  margin: 4px 
+  margin: 4px;
+  letter-spacing: 1.5px;
+  
 }
