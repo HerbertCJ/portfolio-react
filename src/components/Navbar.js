@@ -15,7 +15,7 @@ function MyNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto actived" >
+            <Nav className="me-auto actived justify-content-end" style={{width:'100%'}} >
               <Nav.Link href='#home' className='nav-link' eventKey="1">home</Nav.Link>
               <Nav.Link href='#projects' className='nav-link' eventKey="2" >projects</Nav.Link>
               <Nav.Link href='#aboutme' className='nav-link' eventKey="3" >about me</Nav.Link>

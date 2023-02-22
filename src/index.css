@@ -47,8 +47,8 @@
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--primary-clr);
-  margin-left: 2rem;
-  padding: 0.625rem;
+  margin-left: 2rem; 
+  
 }
 
 .navbar-toggler {
