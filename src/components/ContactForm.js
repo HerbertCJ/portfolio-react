@@ -1,10 +1,10 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
-    const [state, handleSubmit] = useForm("xnqydrvy");
+    const [state, handleSubmit] = useForm("xnqydrvy");    
     if (state.succeeded) {
-        return <p className='return-p-msg'>Thanks for sending a message. I will answer you soon.</p>;
-    }
+        return <p className='return-p-msg'>Thanks for sending a message. I will answer you soon.</p>;        
+    }    
     return (
         <form onSubmit={handleSubmit} className='form-contact'>
             <label htmlFor="name">
@@ -15,6 +15,7 @@ function ContactForm() {
                 type="name"
                 name="name"
                 maxLength='20'
+                required
             />
             <ValidationError
                 prefix="Name"
@@ -29,6 +30,7 @@ function ContactForm() {
                 type="email"
                 name="email"
                 maxLength='40'
+                required
             />
             <ValidationError
                 prefix="Email"
@@ -42,6 +44,7 @@ function ContactForm() {
                 id="message"
                 name="message"
                 maxLength='250'
+                required
             />
             <ValidationError
                 prefix="Message"
