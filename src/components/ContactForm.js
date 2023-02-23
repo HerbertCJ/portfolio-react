@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
     const [state, handleSubmit] = useForm("xnqydrvy");
     if (state.succeeded) {
-        return <p>Thanks for sending a message, I'll get back to you shortly.</p>;
+        return <p className='return-p-msg'>Thanks for sending a message. I will answer you soon.</p>;
     }
     return (
         <form onSubmit={handleSubmit} className='form-contact'>
@@ -14,6 +14,7 @@ function ContactForm() {
                 id="name"
                 type="name"
                 name="name"
+                maxLength='20'
             />
             <ValidationError
                 prefix="Name"
@@ -27,6 +28,7 @@ function ContactForm() {
                 id="email"
                 type="email"
                 name="email"
+                maxLength='40'
             />
             <ValidationError
                 prefix="Email"
@@ -39,6 +41,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
+                maxLength='250'
             />
             <ValidationError
                 prefix="Message"

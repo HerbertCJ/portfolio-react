@@ -602,10 +602,12 @@
 
 .form-contact label {
   color: white;
-  margin-top: 10px;
+  margin-top: 10px;  
 }
 
-.form-contact textarea {
+.form-contact textarea, .form-contact input {
+  font-weight: 100;
+  letter-spacing: 1.2px;
   resize: none;
 }
 
@@ -615,4 +617,9 @@
 
 .form-contact button:hover {
   background-color: var(--primary-orange);
+}
+
+.return-p-msg {
+  color: white;
+  text-align: center;
 }
