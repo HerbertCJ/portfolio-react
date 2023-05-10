@@ -1,17 +1,27 @@
 import { useEffect, useState } from 'react'
-import Card from "../components/Card"
-import { cardData } from '../data'
+import { slideData } from '../data'
 import Timeline from "../components/Timeline"
 import { MdEmail } from 'react-icons/md'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import ContactForm from '../components/ContactForm'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
+import { motion } from "framer-motion";
+import { Navigation } from 'swiper';
+
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/swiper-bundle.css";
+import 'swiper/css/navigation';
+
+SwiperCore.use([Autoplay]);
 
 const Home = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
     const [delta, setDelta] = useState(300 - Math.random() * 100)
-    const toRotate = ["HTML5", "CCS", "JavaScript", "TypeScript", "BootStrap", "React.js", "Redux", "Node.js", "MongoDB", "MySQL", "Java"]
+    const toRotate = ["HTML5", "CCS", "JavaScript", "TypeScript", "BootStrap", "Material UI", "React.js", "NextJS", "Redux ToolKit", "Node.js", "MongoDB", "MySQL", "Java"]
     const period = 1000
 
     useEffect(() => {
@@ -61,11 +71,56 @@ const Home = () => {
             <div className="project-container" id='projects'>
                 <div className="dark-bg">
                     <h2>Checkout my projects</h2>
-                    <section className="projects">
-                        {cardData.map((card) => {
-                            return <Card key={card.id} {...card} className='card' />
-                        })}
-                    </section>
+                    <motion.div initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 },
+                        }}>
+                        <section className="projects">
+                            <Swiper
+                                modules={[Navigation]}
+                                spaceBetween={0}
+                                slidesPerView='auto'
+                                centeredSlides={true}
+                                loop={true}
+                                autoplay={{ delay: 2000 }}
+                                navigation
+                                breakpoints={{
+                                    1100: {
+                                        spaceBetween: 100,
+                                        slidesPerView: 3
+                                    },
+                                    600: {
+                                        spaceBetween: 50,
+                                        slidesPerView: 2
+                                    },
+                                    450: {
+                                        spaceBetween: 20,
+                                        slidesPerView: 2
+                                    },
+                                }}
+
+                            >
+                                {slideData.map((slide) => {
+                                    const { title, text, url, image, id } = slide
+                                    return (
+                                        <SwiperSlide key={id} id='slideLayout'>
+                                            <span></span>
+                                            <div className="content">
+                                                <img src={image} height="150px" className="card-img-top" alt={title} />
+                                                <h2>{title}</h2>
+                                                <p>{text}</p>
+                                                <a href={url} className="btn" target="_blank" rel='noreferrer'>Link</a>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })}
+                            </Swiper>
+                        </section>
+                    </motion.div>
                 </div>
             </div>
 

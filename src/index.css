@@ -93,6 +93,10 @@
     font-size: 1rem;
     padding: 0.325rem;
   }
+ 
+  #slideLayout {
+    width: 300px !important;
+  }
 
 }
 
@@ -175,6 +179,8 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 40px;  
+  display: flex;
+  align-items: center;
 }
 
 .dark-bg {
@@ -463,9 +469,8 @@
 /* CARD */
 
 
-#cardLayout {
+#slideLayout {
   position: relative;
-  width: 320px;
   height: 470px;
   color: #fff;
   background: #111;
@@ -479,7 +484,7 @@
 }
 
 
-#cardLayout::before {
+#slideLayout::before {
   content: '';
   position: absolute;
   top: 0;
@@ -489,7 +494,7 @@
   background: linear-gradient(315deg, var(--card1), var(--card2));
 }
 
-#cardLayout::after {
+#slideLayout::after {
   content: '';
   position: absolute;
   top: 0;
@@ -500,7 +505,7 @@
   filter: blur(30px);
 }
 
-#cardLayout span {
+#slideLayout span {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -510,7 +515,7 @@
   z-index: 2;
 }
 
-#cardLayout span::before {
+#slideLayout span::before {
   content: '';
   position: absolute;
   top: 0;
@@ -521,27 +526,27 @@
   pointer-events: none;
 }
 
-#cardLayout .content {
+#slideLayout .content {
   position: relative;
   z-index: 10;
   padding: 10px 30px;
 
 }
 
-#cardLayout .content h2 {
+#slideLayout .content h2 {
   font-size: 1.6em;
   color: #fff;
   margin: 10px 0px;
 }
 
-#cardLayout .content p {
+#slideLayout .content p {
   font-size: 1.1em;
   color: #fff;
   margin-bottom: 10px;
   line-height: 1.4em;
 }
 
-#cardLayout .content a {
+#slideLayout .content a {
   display: flex;
   font-size: 1.1em;
   color: #111;
@@ -555,17 +560,17 @@
 }
 
 
-#cardLayout .content img {
+#slideLayout .content img {
   opacity: 1;
 }
 
-#cardLayout .content a:hover {
+#slideLayout .content a:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.445);
 }
 
 
-#cardLayout .content:hover {
+#slideLayout .content:hover {
   opacity: 1;
   transition: 0.4s ease-in;
 }

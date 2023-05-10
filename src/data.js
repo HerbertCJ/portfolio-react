@@ -1,4 +1,4 @@
-const cardData = [
+const slideData = [
     {
         id: 1,
         title: 'TechStore',
@@ -142,4 +142,4 @@ const timelineData = [
     },
 ];
 
-export { cardData, timelineData }
+export { slideData, timelineData }
