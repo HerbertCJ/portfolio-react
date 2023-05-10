@@ -47,8 +47,8 @@
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--primary-clr);
-  margin-left: 2rem; 
-  
+  margin-left: 2rem;
+
 }
 
 .navbar-toggler {
@@ -93,9 +93,14 @@
     font-size: 1rem;
     padding: 0.325rem;
   }
- 
+
   #slideLayout {
     width: 300px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
   }
 
 }
@@ -104,11 +109,11 @@
 
 .intro-wrapper {
   position: relative;
-  background: url(./images/background.jpg);  
+  background: url(./images/background.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
-  margin-top: 100px;  
+  margin-top: 100px;
 }
 
 .intro-bg {
@@ -178,7 +183,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
   display: flex;
   align-items: center;
 }
@@ -189,12 +194,12 @@
 }
 
 .project-container {
-  position: relative;  
+  position: relative;
   z-index: 2;
   background: url('./images/background-code.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 
 .project-container h2 {
@@ -218,7 +223,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 40px 0;  
+  margin: 40px 0;
 }
 
 .timeline-container::after {
@@ -237,7 +242,7 @@
   position: relative;
   margin: 10px 0;
   width: 50%;
-  
+
 }
 
 .timeline-item:nth-child(odd) {
@@ -258,7 +263,7 @@
   position: relative;
   width: 400px;
   max-width: 70%;
-  text-align: right;  
+  text-align: right;
 }
 
 .timeline-item-content::after {
@@ -311,7 +316,7 @@
   font-size: 22px;
   line-height: 24px;
   margin: 15px 0;
-  
+
 }
 
 .timeline-item-content a {
@@ -382,8 +387,8 @@
 .aboutme {
   position: relative;
   z-index: 2;
-  background-image: linear-gradient(45deg, #605F5D, #002A32 );  
-  padding: 50px 0px;  
+  background-image: linear-gradient(45deg, #605F5D, #002A32);
+  padding: 50px 0px;
 }
 
 .aboutme h2 {
@@ -400,13 +405,13 @@
   color: white;
 }
 
-.contact {  
+.contact {
   background-size: cover;
   background-position: center;
   position: relative;
   min-height: 50vh;
   z-index: 2;
-  padding: 50px 0px;  
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -418,7 +423,7 @@
   position: relative;
   z-index: 2;
   text-transform: capitalize;
-  text-align: center;  
+  text-align: center;
   font-size: 3rem;
   letter-spacing: .4rem;
   margin-bottom: 50px;
@@ -428,12 +433,12 @@
 }
 
 
-.contact-content {  
+.contact-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  
+  flex-wrap: wrap;
+
 }
 
 .contact-content div {
@@ -455,7 +460,7 @@
 .iconlinkedin,
 .icongithub,
 .iconemail {
-  font-size: 35px;  
+  font-size: 35px;
   margin: 7px 0px;
 }
 
@@ -587,13 +592,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 5px solid grey;  
+  border-top: 5px solid grey;
 }
 
 .footer p {
   margin: 4px;
   letter-spacing: 1.5px;
-  
+
 }
 
 
@@ -607,10 +612,11 @@
 
 .form-contact label {
   color: white;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
-.form-contact textarea, .form-contact input {
+.form-contact textarea,
+.form-contact input {
   font-weight: 100;
   letter-spacing: 1.2px;
   resize: none;
