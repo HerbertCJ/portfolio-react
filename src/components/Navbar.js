@@ -2,7 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../images/logo.png'
-
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { MdEmail } from 'react-icons/md'
 
 function MyNavbar() {
   function scrollToSection(id) {
@@ -21,7 +22,7 @@ function MyNavbar() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="light" fixed='top'>
         <Container>
           <Navbar.Brand>
-            <img src={logo} alt="logo" onClick={() => scrollToSection('home')} eventKey="0" style={{cursor: 'pointer'}}/>
+            <img src={logo} alt="logo" onClick={() => scrollToSection('home')} eventKey="0" style={{ cursor: 'pointer' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -33,6 +34,11 @@ function MyNavbar() {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <div className='icons-nav'>
+          <a href="https://www.linkedin.com/in/herbertcj" target='_blank' rel='noreferrer'><AiFillLinkedin className='icon' /></a>
+          <a href="https://github.com/HerbertCJ" target='_blank' rel='noreferrer'><AiFillGithub className='icon' /></a>
+          <a href='mailto:herbertjacby@gmail.com'><MdEmail className='icon me-3' /></a>
+        </div>
       </Navbar>
     </div>
   );
