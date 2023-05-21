@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-function ContactForm() {
+
+export default function ContactForm() {
     const [state, handleSubmit] = useForm("xnqydrvy");    
     if (state.succeeded) {
         return <p className='return-p-msg'>Thanks for sending a message. I will answer you soon.</p>;        
@@ -57,9 +58,3 @@ function ContactForm() {
         </form>
     );
 }
-function App() {
-    return (
-        <ContactForm />
-    );
-}
-export default App;
