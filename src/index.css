@@ -38,8 +38,7 @@ scrollbar-thumb {
   --primary-purple-hover: #724ace;
   --background-primary: #111111;
   --background-secondary: #151515;
-  --shadow-elem: 0px 5px 5px -3px #724ace,
-    0px 8px 10px 1px #724ace, 0px 3px 14px 2px #724ace;
+  --shadow-elem: 3px 3px 3px white;
 }
 
 .title {
@@ -124,7 +123,7 @@ scrollbar-thumb {
 
 .intro-bg {
   position: relative;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-position: center;
   height: 100svh;
@@ -144,7 +143,7 @@ scrollbar-thumb {
 }
 
 .main-info h1 {
-  color: var(--primary-orange);
+  color: var(--primary-purple);
   text-transform: capitalize;
   font-size: 4rem;
   letter-spacing: 1px;
@@ -198,8 +197,8 @@ scrollbar-thumb {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 3.6rem;
-  max-width: 1240px;
+  gap: 2.4rem;
+  max-width: 1250px;
   padding: 4rem;
   margin: 0 auto;
 }
@@ -207,40 +206,38 @@ scrollbar-thumb {
 .projects h2 {
   font-size: 2.4rem;
   color: var(--primary-purple);
-  font-weight: 600;
+  font-weight: 500;
   margin: 2.4rem 0;
 }
 
 .projects p {
-  font-weight: 400;
+  font-weight: 300;
   color: white;
 }
 
 .project-div {
-  width: 30rem;
-  height: 40rem;
-  background-color: var(--background-secondary);
+  width: 35rem;
+  height: 45rem;
+  background-color: var(--background-primary);
   text-align: center;
   font-size: 1.6rem;
-  padding: 1.6rem;
-  box-shadow: var(--shadow-elem);
-  border-radius: 0.4rem;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
-  border: 0.1rem solid var(--primary-purple);
-  box-shadow: var(--shadow-elem);
+  border: 0.2rem solid #1f1f1f;
 }
 
 .project-div a {
   font-size: 1.6rem;
   width: 100%;
   margin-top: auto;
-  border: 0.1rem solid var(--primary-purple);
   background-color: #fff;
   color: var(--primary-purple);
   border: 0.1rem solid var(--primary-purple);
   background-color: var(--primary-purple);
   color: white;
+  padding: 0.8rem;
 }
 
 .project-div a:hover {
