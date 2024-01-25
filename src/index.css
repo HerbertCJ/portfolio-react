@@ -152,10 +152,10 @@ scrollbar-thumb {
 }
 
 @keyframes entrance {
-  from { 
+  from {
     transform: translateY(-50vh);
   }
-  to {   
+  to {
     transform: translateY(0);
   }
 }
@@ -290,9 +290,13 @@ scrollbar-thumb {
   justify-content: center;
 }
 
+.profile-info-col h4 {
+  font-size: 2.4rem;
+}
+
 .about-row img {
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -327,12 +331,6 @@ scrollbar-thumb {
 @media screen and (max-width: 767px) {
   .profile-info-col {
     padding-top: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .profile-info-col h4 {
-    font-size: 2.4rem;
   }
 }
 
